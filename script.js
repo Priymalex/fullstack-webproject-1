@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const isUpdate = userId && userId !== ''; 
 
             const method = isUpdate ? 'PUT' : 'POST';
-            const apiPath = isUpdate ? `/fullstack-webproject/api/users/${userId}` : '/fullstack-webproject/api/users';
+            const apiPath = isUpdate ? `/fullstack-webproject/api/users/${userId}` : '/fullstack-webproject';
 
             const formData = new FormData(form);
             const bodyData = new URLSearchParams(formData);
